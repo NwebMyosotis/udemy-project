@@ -17,10 +17,14 @@ function InputArea(props) {
     event.preventDefault();
     if (usernameValue === "" || ageValue === "") {
       props.onError("Please enter a vaild name and age (non-empty value)");
+      setUsernameValue("");
+      setAgeValue("");
       return;
     }
     if (ageValue < 0) {
       props.onError("Please enter a vaild age (>0)");
+      setUsernameValue("");
+      setAgeValue("");
       return;
     }
     const users = {
