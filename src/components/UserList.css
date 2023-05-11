@@ -1,0 +1,22 @@
+.user-list {
+  list-style: none;
+  padding: 5px;
+}
+
+.user-list p {
+  margin: 0;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+  border: 1px solid darkgray;
+  height: 35px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.user-list li:hover {
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+}
